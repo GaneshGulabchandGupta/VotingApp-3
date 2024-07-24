@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  VotingApp
-//
-//  Created by Ganesh on 25/04/24.
-//
+
 
 import UIKit
 

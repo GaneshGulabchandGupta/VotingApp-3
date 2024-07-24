@@ -13,6 +13,13 @@
 		18414CB12BDA1A95003F93CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18414CAF2BDA1A95003F93CE /* Main.storyboard */; };
 		18414CB32BDA1A98003F93CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18414CB22BDA1A98003F93CE /* Assets.xcassets */; };
 		18414CB62BDA1A98003F93CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18414CB42BDA1A98003F93CE /* LaunchScreen.storyboard */; };
+		18414CBE2BDA1CDA003F93CE /* ResisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CBD2BDA1CDA003F93CE /* ResisterPage.swift */; };
+		18414CC02BDA2023003F93CE /* VotingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CBF2BDA2023003F93CE /* VotingPage.swift */; };
+		18414CC42BDA2E1E003F93CE /* CandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CC32BDA2E1E003F93CE /* CandidateCell.swift */; };
+		1856CB052BDBB8900091CBD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1856CB042BDBB8900091CBD9 /* GoogleService-Info.plist */; };
+		185C162D2C50C45B00EC224B /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C162C2C50C45B00EC224B /* AdminVC.swift */; };
+		18D0A0DF2BDA76AA007C5298 /* SAVEcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A0DE2BDA76AA007C5298 /* SAVEcell.swift */; };
+		18DD82002BDCCC0000494042 /* VoteCTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD81FF2BDCCC0000494042 /* VoteCTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		18414CB22BDA1A98003F93CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18414CB52BDA1A98003F93CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18414CB72BDA1A98003F93CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18414CBD2BDA1CDA003F93CE /* ResisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResisterPage.swift; sourceTree = "<group>"; };
+		18414CBF2BDA2023003F93CE /* VotingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingPage.swift; sourceTree = "<group>"; };
+		18414CC32BDA2E1E003F93CE /* CandidateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateCell.swift; sourceTree = "<group>"; };
+		1856CB042BDBB8900091CBD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		185C162C2C50C45B00EC224B /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		18D0A0DE2BDA76AA007C5298 /* SAVEcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVEcell.swift; sourceTree = "<group>"; };
+		18DD81FF2BDCCC0000494042 /* VoteCTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +72,18 @@
 			children = (
 				18414CA92BDA1A95003F93CE /* AppDelegate.swift */,
 				18414CAB2BDA1A95003F93CE /* SceneDelegate.swift */,
-				18414CAD2BDA1A95003F93CE /* ViewController.swift */,
 				18414CAF2BDA1A95003F93CE /* Main.storyboard */,
+				185C162C2C50C45B00EC224B /* AdminVC.swift */,
+				18414CAD2BDA1A95003F93CE /* ViewController.swift */,
+				18414CBD2BDA1CDA003F93CE /* ResisterPage.swift */,
+				18414CBF2BDA2023003F93CE /* VotingPage.swift */,
+				18D0A0DE2BDA76AA007C5298 /* SAVEcell.swift */,
+				18414CC32BDA2E1E003F93CE /* CandidateCell.swift */,
+				1856CB042BDBB8900091CBD9 /* GoogleService-Info.plist */,
 				18414CB22BDA1A98003F93CE /* Assets.xcassets */,
 				18414CB42BDA1A98003F93CE /* LaunchScreen.storyboard */,
 				18414CB72BDA1A98003F93CE /* Info.plist */,
+				18DD81FF2BDCCC0000494042 /* VoteCTVC.swift */,
 			);
 			path = VotingApp;
 			sourceTree = "<group>";
@@ -83,6 +104,8 @@
 			dependencies = (
 			);
 			name = VotingApp;
+			packageProductDependencies = (
+			);
 			productName = VotingApp;
 			productReference = 18414CA62BDA1A95003F93CE /* VotingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,8 @@
 				Base,
 			);
 			mainGroup = 18414C9D2BDA1A95003F93CE;
+			packageReferences = (
+			);
 			productRefGroup = 18414CA72BDA1A95003F93CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18414CB62BDA1A98003F93CE /* LaunchScreen.storyboard in Resources */,
+				1856CB052BDBB8900091CBD9 /* GoogleService-Info.plist in Resources */,
 				18414CB32BDA1A98003F93CE /* Assets.xcassets in Resources */,
 				18414CB12BDA1A95003F93CE /* Main.storyboard in Resources */,
 			);
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C162D2C50C45B00EC224B /* AdminVC.swift in Sources */,
+				18D0A0DF2BDA76AA007C5298 /* SAVEcell.swift in Sources */,
+				18414CC02BDA2023003F93CE /* VotingPage.swift in Sources */,
+				18414CC42BDA2E1E003F93CE /* CandidateCell.swift in Sources */,
 				18414CAE2BDA1A95003F93CE /* ViewController.swift in Sources */,
 				18414CAA2BDA1A95003F93CE /* AppDelegate.swift in Sources */,
 				18414CAC2BDA1A95003F93CE /* SceneDelegate.swift in Sources */,
+				18414CBE2BDA1CDA003F93CE /* ResisterPage.swift in Sources */,
+				18DD82002BDCCC0000494042 /* VoteCTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
