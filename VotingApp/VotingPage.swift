@@ -31,20 +31,20 @@ class VotingPage: UIViewController {
     }
     
     @IBAction func AdminBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AdminVC") as! AdminVC
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AdminLogInVC") as! AdminLogInVC
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func handleVote(for candidate: String) {
         if UserDefaults.standard.bool(forKey: "hasVoted") {
-            showAlert(title: "Error", message: "You have already voted.")
+            showAlert(title: "Sorry!", message: "You have already voted.")
             return
         }
         
         let voteSuccessful = saveVote(for: candidate)
         if voteSuccessful {
             UserDefaults.standard.set(true, forKey: "hasVoted")
-            showAlert(title: "Success", message: "Your vote has been successfully cast for \(candidate).")
+            showAlert(title: "Success", message: "Coongrates! Your vote has been successfully .")
         } else {
             showAlert(title: "Failure", message: " Please try again.")
         }

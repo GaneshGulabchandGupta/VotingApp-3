@@ -303,6 +303,74 @@
             </objects>
             <point key="canvasLocation" x="2322.9007633587785" y="5.6338028169014089"/>
         </scene>
+        <!--Admin Log InVC-->
+        <scene sceneID="9vb-Iq-bwa">
+            <objects>
+                <viewController storyboardIdentifier="AdminLogInVC" id="3oN-pT-8n2" customClass="AdminLogInVC" customModule="VotingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lrd-sL-FSy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMIN LOG IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPE-u4-nEa">
+                                <rect key="frame" x="70" y="179" width="253" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dan-gG-DgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KzZ-Dd-P1P">
+                                <rect key="frame" x="20" y="279" width="353" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADMIN NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azY-nx-Mh8">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="63.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abr-Ap-5P7">
+                                        <rect key="frame" x="0.0" y="83.333333333333314" width="353" height="63.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOF-AG-qnf">
+                                        <rect key="frame" x="0.0" y="166.66666666666669" width="353" height="63.333333333333343"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.16857564450000001" green="0.16478729249999999" blue="0.1568614542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="LOG IN">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AdminLoginbtn:" destination="3oN-pT-8n2" eventType="touchUpInside" id="uB9-h3-WI1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Mrd-qc-dxj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HoO-gi-8y6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QPE-u4-nEa" firstAttribute="top" secondItem="HoO-gi-8y6" secondAttribute="top" constant="120" id="Dbr-d1-lfT"/>
+                            <constraint firstItem="KzZ-Dd-P1P" firstAttribute="leading" secondItem="HoO-gi-8y6" secondAttribute="leading" constant="20" id="JcM-pG-agv"/>
+                            <constraint firstItem="QPE-u4-nEa" firstAttribute="leading" secondItem="HoO-gi-8y6" secondAttribute="leading" constant="70" id="KCr-5j-VsJ"/>
+                            <constraint firstItem="HoO-gi-8y6" firstAttribute="trailing" secondItem="KzZ-Dd-P1P" secondAttribute="trailing" constant="20" id="f9m-Xf-BRl"/>
+                            <constraint firstItem="KzZ-Dd-P1P" firstAttribute="top" secondItem="QPE-u4-nEa" secondAttribute="bottom" constant="50" id="heK-lg-a51"/>
+                            <constraint firstItem="HoO-gi-8y6" firstAttribute="trailing" secondItem="QPE-u4-nEa" secondAttribute="trailing" constant="70" id="vwY-Yg-oW8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AdminName" destination="azY-nx-Mh8" id="00e-j1-fYu"/>
+                        <outlet property="AdminPassword" destination="abr-Ap-5P7" id="ZxV-bH-qeh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKq-mI-wmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3049.6183206106871" y="5.6338028169014089"/>
+        </scene>
         <!--AdminVC-->
         <scene sceneID="lk5-jH-Ykh">
             <objects>
@@ -371,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dU-xF-xLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3017.5572519083967" y="7.746478873239437"/>
+            <point key="canvasLocation" x="3720" y="6"/>
         </scene>
     </scenes>
     <resources>
