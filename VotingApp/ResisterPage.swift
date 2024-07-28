@@ -1,5 +1,6 @@
-
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ResisterPage: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
@@ -9,54 +10,27 @@ class ResisterPage: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func registerBtnPressed(_ sender: UIButton) {
-        guard let username = usernameTextField.text, !username.isEmpty,
+    @IBAction func signUpBtn(_ sender: UIButton) {
+        guard let email = usernameTextField.text, !email.isEmpty,
               let password = passwordTextField.text, !password.isEmpty else {
-            let alert = UIAlertController(title: "Error", message: "Please fill in all fields.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Please enter both email and password.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
             return
         }
         
-        
-        if isUsernameUnique(username: username) {
-           
-            UserDefaults.standard.set(username, forKey: "username")
-            UserDefaults.standard.set(password, forKey: "password")
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                let alert = UIAlertController(title: "Sorry!", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
             
-            let alert = UIAlertController(title: "Success", message: "Registration successful!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                self.navigationController?.popViewController(animated: true)
-            }))
-            present(alert, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Error", message: "Username already taken. Please choose a different username.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    func isUsernameUnique(username: String) -> Bool {
-        let savedUsername = UserDefaults.standard.string(forKey: "username")
-        return savedUsername != username
-    }
-
-@IBAction func loginBtnPressed(_ sender: Any) {
-        guard let username = usernameTextField.text, !username.isEmpty else {
-            let alert = UIAlertController(title: "Error", message: "Please enter a username.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-            return
-        }
-
-        let savedUsername = UserDefaults.standard.string(forKey: "username")
-        if savedUsername == username {
-            let alert = UIAlertController(title: "Error", message: "Username already taken. Please choose a different username.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-        } else {
-            navigationController?.popViewController(animated: true)
-            dismiss(animated: true)
+        
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "VotingPage") as! VotingPage
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

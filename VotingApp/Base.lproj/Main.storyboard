@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3bR-rx-Jj3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svu-Pm-q1i">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -8,82 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VotingApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vJK-cW-amS">
-                                <rect key="frame" x="20" y="233" width="353" height="130"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8r-Bf-pnu">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="loG-lL-LlO">
-                                        <rect key="frame" x="0.0" y="75" width="353" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="dc3-Ov-s42"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mru-HN-760">
-                                <rect key="frame" x="20" y="713" width="353" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztS-OV-Bti">
-                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="60"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="LOGIN"/>
-                                        <connections>
-                                            <action selector="LogInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40G-Mi-zqF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtX-vb-7xp">
-                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="60"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="REGISTER"/>
-                                        <connections>
-                                            <action selector="registerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8b6-m8-yFh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="3lD-df-pCA"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vJK-cW-amS" secondAttribute="trailing" constant="20" id="BF3-zX-pNa"/>
-                            <constraint firstItem="mru-HN-760" firstAttribute="top" secondItem="vJK-cW-amS" secondAttribute="bottom" constant="350" id="Mq4-Wo-P1d"/>
-                            <constraint firstItem="vJK-cW-amS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NtK-7V-2pX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mru-HN-760" secondAttribute="trailing" constant="20" id="V8c-Ln-cow"/>
-                            <constraint firstItem="mru-HN-760" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hQa-AL-mKL"/>
-                            <constraint firstItem="vJK-cW-amS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="iU8-Wp-1ps"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="eSY-ht-Wxz"/>
-                    <connections>
-                        <outlet property="emailTextField" destination="H8r-Bf-pnu" id="dm4-kD-6zT"/>
-                        <outlet property="passwordTextField" destination="loG-lL-LlO" id="f2Y-hD-OCa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="924.4274809160305" y="5.6338028169014089"/>
-        </scene>
         <!--Resister Page-->
         <scene sceneID="8eK-Rg-C3J">
             <objects>
@@ -93,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OfP-2H-HVc">
-                                <rect key="frame" x="20" y="189" width="353" height="260"/>
+                                <rect key="frame" x="20" y="233" width="353" height="260"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-tO-FDm">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-tO-FDm">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -105,7 +29,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jXM-Ed-awT">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jXM-Ed-awT">
                                         <rect key="frame" x="0.0" y="140" width="353" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -138,9 +62,9 @@
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="REGISTER"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN UP"/>
                                         <connections>
-                                            <action selector="registerBtnPressed:" destination="WGL-Yv-5Uu" eventType="touchUpInside" id="LfM-YV-Ur9"/>
+                                            <action selector="signUpBtn:" destination="WGL-Yv-5Uu" eventType="touchUpInside" id="ebA-nZ-gUa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -160,32 +84,15 @@
                             <constraint firstItem="9US-wg-O4B" firstAttribute="leading" secondItem="J4c-ke-fPk" secondAttribute="leading" constant="20" id="yJF-YO-LTA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BId-cF-AqG"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="kt0-Xt-b9O" id="S5O-HD-6Tp"/>
-                        <outlet property="usernameTextField" destination="KRj-tO-FDm" id="hpB-7G-upe"/>
+                        <outlet property="passwordTextField" destination="kt0-Xt-b9O" id="vfg-38-Jod"/>
+                        <outlet property="usernameTextField" destination="KRj-tO-FDm" id="d2U-ei-FfS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2t-FO-uTn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="6"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="aiS-u7-9Nz">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3bR-rx-Jj3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CKJ-3u-o65">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3p1-a5-0W7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="779-yZ-Gms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2.2900763358778624" y="5.6338028169014089"/>
+            <point key="canvasLocation" x="2518.320610687023" y="5.6338028169014089"/>
         </scene>
         <!--Voting Page-->
         <scene sceneID="ih7-0n-EZS">
@@ -301,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBy-5r-AIv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322.9007633587785" y="5.6338028169014089"/>
+            <point key="canvasLocation" x="3249.6183206106871" y="5.6338028169014089"/>
         </scene>
         <!--Admin Log InVC-->
         <scene sceneID="9vb-Iq-bwa">
@@ -369,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKq-mI-wmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3049.6183206106871" y="5.6338028169014089"/>
+            <point key="canvasLocation" x="3976.3358778625952" y="5.6338028169014089"/>
         </scene>
         <!--AdminVC-->
         <scene sceneID="lk5-jH-Ykh">
@@ -439,7 +346,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dU-xF-xLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3720" y="6"/>
+            <point key="canvasLocation" x="4646.5648854961828" y="5.6338028169014089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gC5-ck-cnZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="svu-Pm-q1i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QqM-JV-Mhd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WGL-Yv-5Uu" kind="relationship" relationship="rootViewController" id="3rY-2D-BcZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUc-qB-hxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591.6030534351144" y="5.6338028169014089"/>
         </scene>
     </scenes>
     <resources>

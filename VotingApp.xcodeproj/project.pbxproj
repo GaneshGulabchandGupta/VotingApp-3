@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18414CAA2BDA1A95003F93CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CA92BDA1A95003F93CE /* AppDelegate.swift */; };
 		18414CAC2BDA1A95003F93CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CAB2BDA1A95003F93CE /* SceneDelegate.swift */; };
-		18414CAE2BDA1A95003F93CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CAD2BDA1A95003F93CE /* ViewController.swift */; };
 		18414CB12BDA1A95003F93CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18414CAF2BDA1A95003F93CE /* Main.storyboard */; };
 		18414CB32BDA1A98003F93CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18414CB22BDA1A98003F93CE /* Assets.xcassets */; };
 		18414CB62BDA1A98003F93CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18414CB42BDA1A98003F93CE /* LaunchScreen.storyboard */; };
@@ -18,14 +17,15 @@
 		18414CC42BDA2E1E003F93CE /* CandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18414CC32BDA2E1E003F93CE /* CandidateCell.swift */; };
 		185C162D2C50C45B00EC224B /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C162C2C50C45B00EC224B /* AdminVC.swift */; };
 		186106252C53660100316AE1 /* AdminLogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186106242C53660100316AE1 /* AdminLogInVC.swift */; };
+		186106282C53A85C00316AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186106272C53A85C00316AE1 /* GoogleService-Info.plist */; };
 		18DD82002BDCCC0000494042 /* VoteCTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD81FF2BDCCC0000494042 /* VoteCTVC.swift */; };
+		68F490AD7FBB08587AA33F0A /* Pods_VotingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF518122E6B0C464FD8947B3 /* Pods_VotingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18414CA62BDA1A95003F93CE /* VotingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18414CA92BDA1A95003F93CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18414CAB2BDA1A95003F93CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18414CAD2BDA1A95003F93CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18414CB02BDA1A95003F93CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18414CB22BDA1A98003F93CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18414CB52BDA1A98003F93CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +35,11 @@
 		18414CC32BDA2E1E003F93CE /* CandidateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateCell.swift; sourceTree = "<group>"; };
 		185C162C2C50C45B00EC224B /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		186106242C53660100316AE1 /* AdminLogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLogInVC.swift; sourceTree = "<group>"; };
+		186106272C53A85C00316AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18DD81FF2BDCCC0000494042 /* VoteCTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCTVC.swift; sourceTree = "<group>"; };
+		34704B81F820DE0F2E6BDEC9 /* Pods-VotingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingApp.debug.xcconfig"; path = "Target Support Files/Pods-VotingApp/Pods-VotingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		85303CD9238104C3EEDE6FE2 /* Pods-VotingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingApp.release.xcconfig"; path = "Target Support Files/Pods-VotingApp/Pods-VotingApp.release.xcconfig"; sourceTree = "<group>"; };
+		BF518122E6B0C464FD8947B3 /* Pods_VotingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VotingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F490AD7FBB08587AA33F0A /* Pods_VotingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				18414CA82BDA1A95003F93CE /* VotingApp */,
 				18414CA72BDA1A95003F93CE /* Products */,
+				32D706F61462D9174DCAB6C0 /* Pods */,
+				DF489C5F6B9BF5AE98AB911E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +80,9 @@
 				18414CAF2BDA1A95003F93CE /* Main.storyboard */,
 				186106242C53660100316AE1 /* AdminLogInVC.swift */,
 				185C162C2C50C45B00EC224B /* AdminVC.swift */,
-				18414CAD2BDA1A95003F93CE /* ViewController.swift */,
 				18414CBD2BDA1CDA003F93CE /* ResisterPage.swift */,
 				18414CBF2BDA2023003F93CE /* VotingPage.swift */,
+				186106272C53A85C00316AE1 /* GoogleService-Info.plist */,
 				18414CC32BDA2E1E003F93CE /* CandidateCell.swift */,
 				18414CB22BDA1A98003F93CE /* Assets.xcassets */,
 				18414CB42BDA1A98003F93CE /* LaunchScreen.storyboard */,
@@ -85,6 +92,23 @@
 			path = VotingApp;
 			sourceTree = "<group>";
 		};
+		32D706F61462D9174DCAB6C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34704B81F820DE0F2E6BDEC9 /* Pods-VotingApp.debug.xcconfig */,
+				85303CD9238104C3EEDE6FE2 /* Pods-VotingApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF489C5F6B9BF5AE98AB911E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF518122E6B0C464FD8947B3 /* Pods_VotingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,17 +116,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18414CBA2BDA1A98003F93CE /* Build configuration list for PBXNativeTarget "VotingApp" */;
 			buildPhases = (
+				AA8329E216EE72ECF0030941 /* [CP] Check Pods Manifest.lock */,
 				18414CA22BDA1A95003F93CE /* Sources */,
 				18414CA32BDA1A95003F93CE /* Frameworks */,
 				18414CA42BDA1A95003F93CE /* Resources */,
+				1E8DB2DDEFD31D78B48D9B38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VotingApp;
-			packageProductDependencies = (
-			);
 			productName = VotingApp;
 			productReference = 18414CA62BDA1A95003F93CE /* VotingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -131,8 +155,6 @@
 				Base,
 			);
 			mainGroup = 18414C9D2BDA1A95003F93CE;
-			packageReferences = (
-			);
 			productRefGroup = 18414CA72BDA1A95003F93CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,12 +170,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				18414CB62BDA1A98003F93CE /* LaunchScreen.storyboard in Resources */,
+				186106282C53A85C00316AE1 /* GoogleService-Info.plist in Resources */,
 				18414CB32BDA1A98003F93CE /* Assets.xcassets in Resources */,
 				18414CB12BDA1A95003F93CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8DB2DDEFD31D78B48D9B38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VotingApp/Pods-VotingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VotingApp/Pods-VotingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VotingApp/Pods-VotingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA8329E216EE72ECF0030941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VotingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18414CA22BDA1A95003F93CE /* Sources */ = {
@@ -163,7 +228,6 @@
 				185C162D2C50C45B00EC224B /* AdminVC.swift in Sources */,
 				18414CC02BDA2023003F93CE /* VotingPage.swift in Sources */,
 				18414CC42BDA2E1E003F93CE /* CandidateCell.swift in Sources */,
-				18414CAE2BDA1A95003F93CE /* ViewController.swift in Sources */,
 				18414CAA2BDA1A95003F93CE /* AppDelegate.swift in Sources */,
 				18414CAC2BDA1A95003F93CE /* SceneDelegate.swift in Sources */,
 				18414CBE2BDA1CDA003F93CE /* ResisterPage.swift in Sources */,
@@ -231,7 +295,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,7 +358,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -315,6 +379,7 @@
 		};
 		18414CBB2BDA1A98003F93CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34704B81F820DE0F2E6BDEC9 /* Pods-VotingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +407,7 @@
 		};
 		18414CBC2BDA1A98003F93CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85303CD9238104C3EEDE6FE2 /* Pods-VotingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
